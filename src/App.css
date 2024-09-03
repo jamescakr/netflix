@@ -1,6 +1,6 @@
 body {
   background-color: rgb(16, 16, 16) !important;
-  color: white;
+  color: white !important;
 }
 
 .navbar-custom .navbar {
