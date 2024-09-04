@@ -13,6 +13,17 @@ const Banner = () => {
   if (isError) {
     return <Alert variant="danger">{error.message}</Alert>;
   }
+  // if (!data || !data.results || data.results.length === 0) {
+  //   return <Alert variant="warning">No movie data available.</Alert>;
+  // } 
+
+
+  const truncateText = (text, maxLength) => {
+    if (text.length > maxLength) {
+      return text.substring(0, maxLength) + "...";
+    }
+    return text;
+  };
 
   return (
     <div
@@ -26,7 +37,7 @@ const Banner = () => {
     >
       <div className="text-white banner-text-area ">
         <h1>{data?.results[0].title}</h1>
-        <p>{data?.results[0].overview}</p>
+        <p>{truncateText(data?.results[0].overview, 200)}</p>
       </div>
     </div>
   );
