@@ -13,9 +13,7 @@ const Banner = () => {
   if (isError) {
     return <Alert variant="danger">{error.message}</Alert>;
   }
-  // if (!data || !data.results || data.results.length === 0) {
-  //   return <Alert variant="warning">No movie data available.</Alert>;
-  // } 
+
 
 
   const truncateText = (text, maxLength) => {
