@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
 import { Outlet, useNavigate } from "react-router-dom";
 import "../App.css";
 import { useState } from "react";
@@ -52,15 +51,6 @@ const AppLayout = () => {
             </Form>
           </Navbar.Collapse>
 
-          {/* drop down >> 나중에 살리기 */}
-          {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#action3">Manage Profile</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Transfer Profile</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Account</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Help Center</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action5">Sign out of Netflix</NavDropdown.Item>
-          </NavDropdown> */}
         </Container>
       </Navbar>
       <Outlet />

@@ -1,0 +1,13 @@
+.pagination {
+  justify-content: center; /* 중앙정렬 */
+}
+
+.pagination .page-item .page-link {
+  background-color: red; /* 버튼 배경색을 빨간색으로 */
+  color: white; /* 숫자를 흰색으로 */
+}
+
+.pagination .page-item.active .page-link {
+  background-color: darkred; /* 현재 페이지 버튼 색상을 진한 빨간색으로 */
+  border-color: darkred;
+}
